@@ -1,3 +1,13 @@
+/*
+* Creator: Ahmad Maruf
+* Institution: Columbia University, New York
+* Project Name: FOREXproject
+* Description:
+*	Java code to analyze the history of prices (data) of the 
+*	different currency pairs (i.e. UDS/JPY) and stock quotes 
+*	to predict future prices and anticipate gain (profit or loss).
+* All Rights Reserved 2014.
+*/
 package project_forex_of_USD_JPY;
 
 import java.io.File;
