@@ -1,4 +1,4 @@
-Trading_Data_Analysis:_A_Forex_Project
+Trading_Data_Analysis-_A_Forex_Project
 ======================================
 
 Summary:
