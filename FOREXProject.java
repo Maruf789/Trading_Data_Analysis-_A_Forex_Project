@@ -6,7 +6,7 @@
 *	Java code to analyze the history of prices (data) of the 
 *	different currency pairs (i.e. UDS/JPY) and stock quotes 
 *	to predict future prices and anticipate gain (profit or loss).
-* All Rights Reserved 2014.
+* All Rights Reserved 09.29.2013.
 */
 package project_forex_of_USD_JPY;
 
