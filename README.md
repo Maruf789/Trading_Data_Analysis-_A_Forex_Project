@@ -2,7 +2,7 @@ Trading_Data_Analysis-_A_Forex_Project
 ======================================
 
 Summary:
-Java code to analyze the history of prices (data) of the different currency pairs (i.e. UDS/JPY) and stock quotes to predict future prices and anticipate gain (profit or loss).
+Java code to analyze the history of prices (data) of the different currency pairs (i.e. USD/JPY) and stock quotes to predict future prices and anticipate gain (profit or loss).
 
 Introduction:
 Since the birth of civilization, people have been engaging in trade for survival and profit. Trading, that is to buy or sell something, involves exchanges that can be divided into different types—Commodity exchanges (trading of physical goods), Stock exchanges, and Foreign exchanges (Forex). “Forex is an exchange where different currencies are traded” [1].Forex is the world’s largest and the most famous liquid trading market. Many people consider Forex as the best home business you can ever venture in. In this article, we will only talk about Foreign Exchanges. We are going to discuss a couple of methods and terminology using technical analysis, in which we will use the history of prices (data) of the different currency pairs and stock quotes to predict future prices and anticipate gain (profit or loss).
