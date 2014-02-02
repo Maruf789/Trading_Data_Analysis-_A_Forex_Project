@@ -79,7 +79,6 @@ H = hourly, D = daily
 ➢	Results of Trade for Short Reversal Pattern (11 11 11 00)
 H = hourly, D = daily
  
-➢	Comparing the results of both (Long and Short) reversal Patterns we get the following table:
  
 #######################################################################################################################
 #                                             DISCUSSION OF RESULTS                                                   #
