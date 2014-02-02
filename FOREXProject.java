@@ -98,14 +98,18 @@ private static int[]ShortRevPattern = {1,1,1,1,1,1,0,0};//Set short Reversal Pat
 //Fill the Array from csv data file....
 public static void FillArrays() throws FileNotFoundException
 {		
-		Scanner in = new Scanner(new File("E:/Laguardia Docs/MAC286/EURUSD_hour_new.csv")); //read from the 'EURUSD_hour_new' file, which is in my hardDrive. but actually this program will actually work for any forex data, as long as you convert it to a .csv file)
-		//pips = a 10000th of USD
-		
-		//Scanner in = new Scanner(new File("H:/Laguardia Docs/MAC286/USDJPY_hour.csv")); //read from the 'USDJPY_hour' file
-		//pips = a 100th of JPY
-		//Scanner in = new Scanner(new File("J:/Laguardia Docs/MAC286/USDCAD_hour.csv")); //read from the 'USDCAD_hour_new' file
-		//Scanner in = new Scanner(new File("F:/Laguardia Docs/MAC286/IBM_table.csv")); //read from the 'EURUSD_hour_new' file
-	
+		Scanner in = new Scanner(new File("E:/Laguardia Docs/MAC286/EURUSD_hour_new.csv")); 
+		/* this reads from the 'EURUSD_hour_new' file, which is in my hardDrive, 
+		*  but this program will actually work for ANY forex data, 
+		*  as long as you convert it to a .csv file and format it 
+		*  according to out METHODOLOGY (explained in READMME.txt)
+		*  (the currency pairs can be downloaded from http://www.fxhistoricaldata.com/)
+		*  Note:  pips = a 10000th of USD;   pips = a 100th of JPY; etc.
+		*  Again for example, you can read data ofr other currency pairs as well:
+		*  Scanner in = new Scanner(new File("H:/Laguardia Docs/MAC286/USDJPY_hour.csv")); //read from the 'USDJPY_hour' file
+		*  Scanner in = new Scanner(new File("J:/Laguardia Docs/MAC286/USDCAD_hour.csv")); //read from the 'USDCAD_hour_new' file
+		*  Scanner in = new Scanner(new File("F:/Laguardia Docs/MAC286/IBM_table.csv")); //read from the 'EURUSD_hour_new' file
+		*/
 	in.nextLine();//skip first line of csv file
 	while(in.hasNextLine()) //as long as there is a next line of data
 	{
