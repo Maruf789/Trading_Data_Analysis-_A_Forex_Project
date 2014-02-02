@@ -99,7 +99,7 @@ private static int[]ShortRevPattern = {1,1,1,1,1,1,0,0};//Set short Reversal Pat
 public static void FillArrays() throws FileNotFoundException
 {		
 		Scanner in = new Scanner(new File("E:/Laguardia Docs/MAC286/EURUSD_hour_new.csv")); 
-		/* this reads from the 'EURUSD_hour_new' file, which is in my hardDrive, 
+		/* this reads from the 'EURUSD_hour_new' file, which is in my hardDrive (or whatever PATH you use), 
 		*  but this program will actually work for ANY forex data, 
 		*  as long as you convert it to a .csv file and format it 
 		*  according to out METHODOLOGY (explained in READMME.txt)
