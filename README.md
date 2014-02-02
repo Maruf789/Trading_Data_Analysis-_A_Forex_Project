@@ -1,22 +1,27 @@
 Trading_Data_Analysis-_A_Forex_Project
 ======================================
 
-Summary:
-Java code to analyze the history of prices (data) of the different currency pairs (i.e. USD/JPY) and stock quotes to predict future prices and anticipate gain (profit or loss).
+	Java code to analyze the history of prices (data) of the different currency pairs (i.e. USD/JPY) and stock quotes to predict future prices and anticipate gain (profit or loss).
+	
+#######################################################################################################################
+#                                                INTRODUCTION                                                         #
+#######################################################################################################################
 
-Introduction:
+	Since the birth of civilization, people have been engaging in trade for survival and profit. Trading, that is to buy or sell something, involves exchanges that can be divided into different types—Commodity exchanges (trading of physical goods), Stock exchanges, and Foreign exchanges (Forex). “Forex is an exchange where different currencies are traded” [1].Forex is the world’s largest and the most famous liquid trading market. Many people consider Forex as the best home business you can ever venture in. In this article, we will only talk about Foreign Exchanges. We are going to discuss a couple of methods and terminology using technical analysis, in which we will use the history of prices (data) of the different currency pairs and stock quotes to predict future prices and anticipate gain (profit or loss).
+	However, trading in Forex is not all rose-colored, it does involve certain risks. We tend to make our buying and selling decisions based on uncertain predictions. Fear of loss and greed for win are the most important factors that influence the actions within a Forex market. To be a successful trader, one should be able to analyze and assess the situation in the market, and make decisions based on the analysis, not his/her emotions. When a trader enters a market, he/she has no idea when the prices (“foreign exchange rate” [2]) will rise, and when they will drop down. 	
+	“Prices on exchanges are formed on the basis of the supply and demand. If more traders want to buy something (demand) than sell it (supply), then the price moves up (Uptrend). Conversely, if more traders want to sell something (supply) than buy it (demand), then the price moves down (Downtrend). So, the price is said to be floating, which provides a good opportunity for speculation on exchanges” [1]. Because there is no specific formula or rule to decide when is the right time to enter or exit a trade, traders have been striving to come up with different approaches to get as close as possible to make successful decisions. In this article, I am going to make my own entry and exit criteria depending on the pattern of prices we’re following. To find the pattern visually, I use candlestick charts.
 
-Since the birth of civilization, people have been engaging in trade for survival and profit. Trading, that is to buy or sell something, involves exchanges that can be divided into different types—Commodity exchanges (trading of physical goods), Stock exchanges, and Foreign exchanges (Forex). “Forex is an exchange where different currencies are traded” [1].Forex is the world’s largest and the most famous liquid trading market. Many people consider Forex as the best home business you can ever venture in. In this article, we will only talk about Foreign Exchanges. We are going to discuss a couple of methods and terminology using technical analysis, in which we will use the history of prices (data) of the different currency pairs and stock quotes to predict future prices and anticipate gain (profit or loss).
-However, trading in Forex is not all rose-colored, it does involve certain risks. We tend to make our buying and selling decisions based on uncertain predictions. Fear of loss and greed for win are the most important factors that influence the actions within a Forex market. To be a successful trader, one should be able to analyze and assess the situation in the market, and make decisions based on the analysis, not his/her emotions. When a trader enters a market, he/she has no idea when the prices (“foreign exchange rate” [2]) will rise, and when they will drop down. “Prices on exchanges are formed on the basis of the supply and demand. If more traders want to buy something (demand) than sell it (supply), then the price moves up (Uptrend). Conversely, if more traders want to sell something (supply) than buy it (demand), then the price moves down (Downtrend). So, the price is said to be floating, which provides a good opportunity for speculation on exchanges” [1]. Because there is no specific formula or rule to decide when is the right time to enter or exit a trade, traders have been striving to come up with different approaches to get as close as possible to make successful decisions. In this article, I am going to make my own entry and exit criteria depending on the pattern of prices we’re following. To find the pattern visually, I use candlestick charts.
+#######################################################################################################################
+#                                            CANDLESTICK CHARTS                                                       #
+#######################################################################################################################
 
-CANDLESTICK CHARTS:
-
-To have the best representation of data, traders come up with different charts and tables. All in order to make the change of prices in the market clearer and interpreting it easier. A Candlestick Chart shows the change of the price within a certain time period. Candlestick lines consist of three parts (Upper shadow, Body, and Lower shadow) and present four pieces of information: High, Low, Open, and Close (see figure 1). Its color is determined by the Opening price and Closing price of that particular period. If the Close is higher than the Open, it takes a green or white color. Otherwise, its color is red or black.  The upper shadow  simply tells the analyzer which price was the highest during that period (week, day, hour…). Inversely, the lower shadow shows the lowest price during that period. 	
+	To have the best representation of data, traders come up with different charts and tables. All in order to make the change of prices in the market clearer and interpreting it easier. A Candlestick Chart shows the change of the price within a certain time period. Candlestick lines consist of three parts (Upper shadow, Body, and Lower shadow) and present four pieces of information: High, Low, Open, and Close (see figure 1). Its color is determined by the Opening price and Closing price of that particular period. If the Close is higher than the Open, it takes a green or white color. Otherwise, its color is red or black.  The upper shadow  simply tells the analyzer which price was the highest during that period (week, day, hour…). Inversely, the lower shadow shows the lowest price during that period. 	
  
+#######################################################################################################################
+#                                             REVERSAL PATTERN(S)                                                     #
+#######################################################################################################################
 
-REVERSAL PATTERN:
-
-It’s a chart formation that indicates the change of prices within a market. A reversal pattern, which usually occurs after a major movement in the price of a currency or in the entire market, is an indication that investors should adjust their positions to take advantage of the coming change in market direction. In technical analysis, reversal patterns any pattern on a chart that indicates a previous trend is changing to a new trend. Generally speaking, any trend in which the highs are lower than the previous highs is bearish (Short) Reversal Candlestick Pattern, while any trend in which the lows are higher than the previous lows is Bullish (Long) Reversal Candlestick Pattern.[3] See chart below.
+	It’s a chart formation that indicates the change of prices within a market. A reversal pattern, which usually occurs after a major movement in the price of a currency or in the entire market, is an indication that investors should adjust their positions to take advantage of the coming change in market direction. In technical analysis, reversal patterns any pattern on a chart that indicates a previous trend is changing to a new trend. Generally speaking, any trend in which the highs are lower than the previous highs is bearish (Short) Reversal Candlestick Pattern, while any trend in which the lows are higher than the previous lows is Bullish (Long) Reversal Candlestick Pattern.[3] See chart below.
 
   1.	Bullish (Long) Reversal Candlestick Pattern: 
 
@@ -30,8 +35,11 @@ Let's see it's streingth and weeknesses---
          •	Strengths: It is a very early signal that buyers may be drying up, potentially getting you in the market very early in the process of a trend reversal. Stop losses can be set very tight and take profits can be large, since a larger scale down trend is just being formed. This sets us up with a very attractive reward: risk ratio.
           
           •	Weaknesses: The selling pressure can easily come from profit taking or from large non-speculative flows, showing many false reversals. Statistically, the hanging man pattern on its own does not provide any discernible edge in the market, and is akin to a coin toss.
- 
-METHODOLOGY:
+
+#######################################################################################################################
+#                                                  METHODOLOGY                                                        #
+#######################################################################################################################
+
   1.	I will begin by getting the data that I will be using on this research paper. I use an excel spreadsheet [5] that includes the following data:
       a.	Open: The opening price of a period (hour).
       b.	Low: The Lowest price during that period.
@@ -61,8 +69,10 @@ METHODOLOGY:
   10.	Display the results.
 
 
- 
-RESULTS:
+#######################################################################################################################
+#                                                  RESULTS                                                            #
+#######################################################################################################################
+
 ➢	Results of Trade for Long Reversal Pattern (00 00 00 11)
 H = hourly, D = daily
  
@@ -72,8 +82,10 @@ H = hourly, D = daily
  
 ➢	Comparing the results of both (Long and Short) reversal Patterns we get the following table:
  
+#######################################################################################################################
+#                                             DISCUSSION OF RESULTS                                                   #
+#######################################################################################################################
 
-DISCUSSION OF RESULTS:
  	For the long reversal pattern, I received positive results. The number of winning trades outweighed the number of losing trades, and I was able to make a fair amount of profit (pips). For example, I found 62% of winning trades, whereas 37% of losing trades in GBP/USD currency pair. 
 For the short reversal pattern, however, the results were more impressive, and I found almost twice more matches than the long reversal pattern. The difference between the number of winning trades and the number of losing trades was very close compared to the result of long reversal pattern, but the amount of profit were more than that of a long reversal pattern. For instance, I found 67% of winning trades, whereas 32% of losing trades in GBP/USD currency pair. In terms of total gain, and average gain per trade, the results of short reversal pattern are more impressive than the long reversal patterns.
   
@@ -86,9 +98,9 @@ For the short reversal pattern, however, the results were more impressive, and I
 CONCLUSION:
 	As mentioned earlier, investing in the Forex market (or any market for that matter) can be very risky. After researching and creating the program (see CODE), I believe that my methods can help beginners better understand and identify the patterns, and make successful trades. The results I've acquired show that future prices are influenced by past ones. Being able to effectively locate reversal patterns is what separates the winners from the losers, in terms of trading. 
 	
-	
-BIBLIOGRAPHY:
-
+#######################################################################################################################
+#                                                 BIBLIOGRAPHY                                                        #
+#######################################################################################################################	
 [1] Nikolay Gekht, and Sunshine. "Forex in a Nutshell." - FxCodeBaseWiki. www.fxcodebase.com, 18 Mar. 2011. Web. 14 May 2012. <http://www.fxcodebase.com/wiki/index.php/Forex_In_A_Nutshell>.[2] "Introduction to Candlesticks - ChartSchool - StockCharts.com."Introduction to Candlesticks - ChartSchool - StockCharts.com.www.StockCharts.com. Web. 14 May 2012.<http://stockcharts.com/school/doku.php?id=chart_school:chart_analysis:introduction_to_candlesticks>.
 
 [2] Weisweiller, Rudi. How the Foreign Exchange Market Works. Original English Language ed. New York, NY: New York Institute of Finance, 1990. Print.
@@ -100,9 +112,10 @@ BIBLIOGRAPHY:
 
 [5] "Forex Historical Data." Forex Historical Data.Web. 14 May 2012. <http://www.fxhistoricaldata.com/>.
 
- 
-APPENDIX:
- 
+#######################################################################################################################
+#                                                  APPENDIX                                                           #
+#######################################################################################################################
+
   ➢	Pip(Point):
       “Pip is the smallest possible change of the price. All currency pairs are priced to a fixed precision. There are       currency pairs which are priced to two digits after the decimal point” [1].
       For example, USD/JPY = 120.05. The smallest change of such currency pairs will always be 0.01 (1 pip = 0.01). So       if the price of USD/JPY changes from 120.05to 120.08, the pair is said to make a 3-pip change. However, most           currency pairs are priced to four digits after the decimal point.
