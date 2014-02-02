@@ -210,7 +210,8 @@ private static void FindShortPattern()
 	public static void Display()
 	{
 		System.out.println("Number of buy/sell operations is: "+(NumOfWins+NumOfLosses));
-		System.out.println("Number of winning trades is: "+NumOfWins+ "Representing: "+(100*NumOfWins/(NumOfWins+NumOfLosses))+"%");
+		System.out.println("Number of winning trades is: "+NumOfWins+ "Representing: "+(100*NumOfWins/(NumOfWins+NumOfLosses))+"%"); 
+		//use can use floor( ) or ceiling( ) to round the result so you avoid the ver long output, I didn't deliberately.
 		System.out.println("Number of losing trades is: "+NumOfLosses+ "Representing: "+(100*NumOfLosses/(NumOfWins+NumOfLosses))+"%");
 	
 		System.out.println("Total gain of all trades is: "+totalGain);
@@ -224,8 +225,10 @@ private static void FindShortPattern()
 }//end FOREXproject class
 
 /* 
-¬	(SAMPLE) OUTPUT: 
+SAMPLE OUTPUT: 
+*/
 
+/*
 Which pattern do you want to use: 
 Enter 1 for Long Pattern, Enter 2 for Short Pattern
 1
