@@ -68,7 +68,7 @@ public class FOREXproject {
 }
 
 	
-//We create the arrays to store data	
+//let's create the arrays to store data	
 private static double Open[] = new double [70000];
 private static double Close[] = new double [70000];
 private static double Low[] = new double [70000];
@@ -76,13 +76,13 @@ private static double High[] = new double [70000];
 private static int DL[] = new int [70000]; // array DL stores the direction of Low
 private static int DH[] = new int [70000]; // array DH stores the direction of High
 
-//we create variables to keep track of results 
+//let's create variables to keep track of results 
 private static int NumOfWins =0;
 private static int NumOfLosses =0;
 private static double totalGain =0;
 private static double totalLoss =0;
 
-//we create variables to set Entry and Exit criteria
+//let's create variables to set Entry and Exit criteria
 private static double buyPrice;
 private static double SellPrice;
 private static double pivotLowPrice;
@@ -105,7 +105,7 @@ public static void FillArrays() throws FileNotFoundException
 		*  according to out METHODOLOGY (explained in READMME.txt)
 		*  (the currency pairs can be downloaded from http://www.fxhistoricaldata.com/)
 		*  Note:  pips = a 10000th of USD;   pips = a 100th of JPY; etc.
-		*  Again for example, you can read data ofr other currency pairs as well:
+		*  Again for example, you can read data from other currency pairs as well:
 		*  Scanner in = new Scanner(new File("H:/Laguardia Docs/MAC286/USDJPY_hour.csv")); //read from the 'USDJPY_hour' file
 		*  Scanner in = new Scanner(new File("J:/Laguardia Docs/MAC286/USDCAD_hour.csv")); //read from the 'USDCAD_hour_new' file
 		*  Scanner in = new Scanner(new File("F:/Laguardia Docs/MAC286/IBM_table.csv")); //read from the 'EURUSD_hour_new' file
